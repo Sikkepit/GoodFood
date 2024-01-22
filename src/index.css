@@ -1,0 +1,331 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+li {
+  padding: 0.2rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100svh;
+  color: #202020;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, .back-link {
+  font-family: 'Bebas Neue', sans-serif;
+  text-wrap: balance;
+}
+
+
+h3 {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+
+/* .recipe--thumb {
+  max-width:300px;
+} */
+.recipe--rating {
+  color:  #FFC300;
+}
+
+#recipelist {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 965px;
+  margin-bottom: 4rem;
+}
+
+#recipelist--wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.recipe-summary--meta {
+  display: block;
+}
+
+#recipe-detail--info {
+  padding:2rem;
+}
+
+
+
+#recipe-detail--summary{
+  background-color:#fefae0;
+  border-radius: 50px;
+  margin-bottom:2rem;
+}
+
+h1, .back-link {
+  font-size:3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size:2rem;
+  margin-block: 1rem;
+}
+
+#recipe-detail--wrapper {
+  max-width: 965px;
+}
+
+#recipe-detail {
+  display: flex;
+  justify-content: center;
+}
+
+#recipe-detail--image {
+  width: 100%;
+  aspect-ratio: 16 / 4;
+  object-fit: cover;
+}
+
+#recipe-detail--instructions ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+#recipe-detail--instructions li {
+  counter-increment: my-awesome-counter;
+  position: relative;
+  margin-bottom:0.5rem;
+  line-height: 2rem;
+}
+#recipe-detail--instructions li::before {
+  content: counter(my-awesome-counter);
+  background: #CB4196;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+#recipe-detail--instructions li .list_item {
+  margin-left: 3rem;
+  display: block;
+}
+
+#recipe-detail--tags {
+  margin-block: 1.5rem;
+}
+
+#recipe-detail--content {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  padding:2rem;
+  gap:4rem;
+  
+}
+
+#latest-recipes {
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+#latest-recipes .fa-star {
+  color:#202020;
+}
+
+#latest-recipes--wrapper {
+  background-color:#b9dc80;
+  padding:2rem;
+  margin-top:2rem;
+}
+
+#latest-recipes--content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.recipe--thumb {
+  max-width:100%;
+}
+
+#recipelist {
+  justify-content: space-evenly;
+  gap:1rem;
+}
+
+#root {
+  padding: 1rem;
+}
+
+@media screen and (min-width:780px) {
+  
+  #latest-recipes--content {
+    flex-wrap: no-wrap;
+  }
+  .recipe--thumb {
+    max-width:350px;
+  }
+}
+
+@media screen and (min-width:810px) {
+  
+  .latest-recipe--thumb{
+    max-width:350px;
+  }
+}
+
+
+@media screen and (min-width:900px) {
+  
+  .latest-recipe--thumb {
+    max-width:200px;
+  }
+  #recipe-detail--content {
+    flex-direction: row;
+    
+  }
+  .recipe--thumb {
+    max-width:300px;
+  }
+
+}
+
+@media screen and (min-width:965px) {
+  
+  #root {
+    padding:0;
+  }
+
+}
+
+.back-link {
+  display: inline-block;
+}
+a {
+  color:#202020;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color:#64827D;
+}
+
+
+#recipe-detail--ingredients ul {
+  margin-left: 1rem;
+}
+
+#recipe-detail--tags li {
+  display: inline-block;
+  color: white;
+  background-color: #202020;
+  padding:0.6rem;
+  margin-right:0.6rem;
+}
+
+img a {
+  border:none;
+}
+a:focus {
+  outline: 2px solid black;
+}
+
+#good-food--logo {
+  max-width: 250px;
+  margin:auto;
+}
+#header {
+ margin-top:3rem;
+}
+
+#nav-bar {
+  max-width: 965px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding-block: 0.5rem;
+  text-align: center;
+}
+
+#nav-bar ul {
+  display:none;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+#nav-bar li {
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+#featured-image--container {
+  max-width: 965px;
+  margin: auto;
+}
+#featured-image {
+  width: 100%;
+  aspect-ratio: 16/6;
+  object-fit: cover;
+}
+#recipe-detail--info p {
+  line-height: 1.8rem;
+  margin-bottom: 2.5rem;
+  width:100%;
+}
+.fa-bars {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 2.5px solid #202020;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width:700px) {
+  .fa-bars {
+    display: none;
+  }
+  #nav-bar li {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+  #nav-bar ul {
+    display:block!important;
+    margin-bottom:0;
+  }
+  #nav-bar {
+    text-align: left;
+  }
+}
+
+
